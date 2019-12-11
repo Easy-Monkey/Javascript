@@ -10,16 +10,18 @@
 <body>
     <div class="dropdown">
         <ul id="ul">
-            <li class="dropbtn"><a href="">首页</a></li>
+            <li class="dropbtn"><a href="javascript:;">首页</a></li>
             <li class="dropbtn"><a href="">新闻</a></li>
             <li class="dropbtn"><a href="">活动</a>  </li>
             <li class="dropbtn"><a href=""> 关于</a> </li>
         </ul>
-        <div class="dropdown-content" id="show">
+
+        <div class="dropdown-content">
             <a href="#">JavaScript中文网1</a>
             <a href="#">JavaScript中文网 2</a>
             <a href="#">JavaScript中文网 3</a>
         </div>
+        
     </div>
         <!-- <button id='clear'>取消</button>
 
@@ -33,6 +35,14 @@
 </body>
 <!-- <script src="./app.js"></script> -->
 <script>
+    var data =  document.getElementsByClassName('dropbtn');
+    console.log(data);
+    
+    data.onclick = function(){
+        alert(12312)
+    }
+
+
     // var data =  document.querySelectorAll('.dropbtn');
     // var btn = document.querySelector('.dropdown-content');
 

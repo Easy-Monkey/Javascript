@@ -1,0 +1,87 @@
+body .dropdown {
+    padding-left: 10%;
+}
+
+ul {
+    list-style-type: none; /*移除列表前小标志。一个导航栏并不需要列表标记*/
+    padding: 0;
+    margin: 0;
+    width:80%;
+    border: 1px solid #e7e7e7;
+    background-color: #f1f1f1;
+    top: 0;     /* 置顶 */
+    position: fixed;  /* 固定 */
+    text-decoration: none;
+}
+
+ul li {
+    text-align: center; /* a 标签居中 */
+    /* border-bottom: 1px solid #555; 设置边框线 实体 颜色 */
+    float: left;    /* 浮动 */
+    border-right: 1px solid #bbb;
+}
+
+ul li a {
+    display: block; 
+    width: 60px;
+    padding: 8px 16px;
+    color: #000;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+}
+/* 隐藏 li  标签下划线 */
+ul li:last-child {
+    border-bottom: none; 
+    border-right: none;
+    float: right;
+    /* padding-right: 200px; */
+}
+
+ul li:first-child {
+    /* margin-left: 200px; */
+    border-left: 1px solid #bbb;
+}
+
+
+
+/*容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display:inline-block;
+}
+
+/*
+ * 鼠标滑到选项改变背景 字体颜色
+ */
+ul li a:hover {
+    background-color: #555555;
+    color: white;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn:hover {
+    background-color: blue;
+ }
+
+ /*在鼠标移上去后显示下拉菜单 */
+/* .dropdown:hover .dropdown-content {
+    display: block;
+ } */
+
+ /* 下拉内容 (默认隐藏) */
+.dropdown .dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+}
