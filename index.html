@@ -8,157 +8,58 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div style="background-color: red">asdfasdfasdfsadfa</div>
     <div class="dropdown">
-        <ul id="ul">
-            <li class="dropbtn"><a href="javascript:;">首页</a></li>
+        <ul class="">
+            <li class="dropbtn">
+                <a href="javascript:;">首页</a>
+            </li>
             <li class="dropbtn"><a href="">新闻</a></li>
             <li class="dropbtn"><a href="">活动</a>  </li>
             <li class="dropbtn"><a href=""> 关于</a> </li>
         </ul>
-
-        <div class="dropdown-content">
-            <a href="#">JavaScript中文网1</a>
-            <a href="#">JavaScript中文网 2</a>
-            <a href="#">JavaScript中文网 3</a>
-        </div>
-        
     </div>
-        <!-- <button id='clear'>取消</button>
+    <div class="first-style">
+        <div class="lists_style">
+            <ul>
+                <li>
+                    <a href="">alal</a>
+                    <i aria-hidden="true" class="tb-ifont service-arrow">&#xe62e;</i>
+                </li>
+                <li>
+                    <a href="">adfad</a>
+                    <i class="tb-ifot"></i>
+                </li>
+                <li>
+                    <a href="">adfadfa</a>
+                    <i class="tb-ifot"></i>
+                </li>
+                <li>
+                    <a href="">adfad</a>
+                    <i class="tb-ifot"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="rotation-chart">
+            <ul>
+                <li>adsfasdfasdfasd</li>
+                <li>adsfasdfasdfasd</li>
+                <li>adsfasdfasdfasd</li>
+                <li>adsfasdfasdfasd</li>
+                <li>adsfasdfasdfasd</li>
+            </ul>
+        </div>
+        <div class="last-chat">
+            <ul>
+                <li>adsfasdfasdfasd</li>
+                <li>adsfasdfasdfasd</li>
+                <li>adsfasdfasdfasd</li>
+                <li>adsfasdfasdfasd</li>
+                <li>adsfasdfasdfasd</li>
+            </ul>
+        </div>
+    </div>
 
-        <div id=clone>
-            <button id="btn">确认</button>
-            <p id='p'><span>AAAA</span></p>
-        </div> -->
-
-
-    <!-- <iframe id="sidebar" src="file:///D:/Users/Desktop/index%20(2).html" frameborder="0"></iframe> -->
 </body>
 <!-- <script src="./app.js"></script> -->
-<script>
-    var data =  document.getElementsByClassName('dropbtn');
-    console.log(data);
-    
-    data.onclick = function(){
-        alert(12312)
-    }
-
-
-    // var data =  document.querySelectorAll('.dropbtn');
-    // var btn = document.querySelector('.dropdown-content');
-
-    // for(var i=0; i<data.length;i++)
-    //     data[i].onmouseover = function(){
-    //         btn.style.display = 'block';
-    //     };
-
-    //     data[i].onmouseout = function(){
-    //         var btn = document.querySelector('.dropdown-content');
-    //         btn.style.display = 'none';
-    //     }
-        
-            
-
-
-    // var e = document.getElementById('ul');
-    // var position = e.getBoundingClientRect();
-    // var x = e.left + position.x;
-    // var y = e.top + position.y;
-
-    // console.log(position);
-
-
-    // // 替换节点
-    // var newb = document.getElementById('nweb');
-
-    // if(!newb)
-    //     var b = document.createElement('b');
-    //     b.id = 'newb';
-    
-    // var news = document.getElementById('clear');
-
-    // news.onclick=function(){
-    //     var clear = document.getElementById('clone');
-    //     news.parentNode.replaceChild(b,clear);
-    // }
- 
-    // // 删除节点
-    // var clear = document.getElementById('clone');
-    // var btn = document.getElementById('btn');
-    // var p = document.getElementById('p');
-    
-    // btn.onclick = function (){
-    //     btn.parentNode.removeChild(p);
-    // }
-
-    // function insertAt(parent,child,n){
-    //     if(n<0|| n>parent.childNodes.length)
-    //         throw new Error('invalid index');
-    //     else if(n == parent.childNodes.length)
-    //         parent.appendChild(child);
-    //     else    
-    //         parent.insertBefore(child, parent.childNodes[n]);
-    // }
-
-    // var child = 'fdsgaddfsadsfasdf';
-    // var div = document.getElementById('clone');
-    // var input = document.getElementsByTagName('input');
-    // console.log(input);
-
-
-    // // insertAt(div,child,2)
-
-
-// return false;
-
-//     var node = document.getElementById('clone').cloneNode(true);
-//     document.getElementById('ap').appendChild(node);
-
-//     var newnode = document.createTextNode("Hello World");
-//     var body = document.getElementById('btn');
-//     body.appendChild(newnode);
-
-
-//     function loadasync(url){
-//         var head = document.getElementsByTagName('head')[0];
-//         var s = document.createElement('script');
-//         s.src = url;
-//         head.appendChild(s)
-    // }
-
-    
-    // loadasync('https://code.jquery.com/jquery-3.1.1.min.js')
-
-    // return false;
-    // btn.onclick = function(){
-    //     alert(1231231)
-    // }
-// function getElements( arguments ){
-    
-//     var elements = {};
-//     for(var i=0; i < arguments.length; i++){
-//         var id = arguments[i];
-//         var elt = document.getElementById(id);
-//         if(elt == null)
-//             throw new Error('No element with id:'+id);
-//         elements[id]=elt;
-        
-//         return elements;
-//     }
-
-// }
-// var id = ['btn','sidebar'];
-
-// console.log(getElements(id));
-
-    // var iframeElement = document.getElementById('sidebar');
-// iframeElement.contentWindow
-    // var obj = window.frames[0];
-
-
-    // console.log(obj);
-
-    // window.open('file:///D:/Users/Desktop/index%20(2).html')
-    // window.close('file:///D:/Users/Desktop/index%20(2).html');
-
-</script>
 </html>

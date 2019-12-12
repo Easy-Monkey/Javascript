@@ -1,27 +1,32 @@
 body .dropdown {
     padding-left: 10%;
+/*容器 <div> - 需要定位下拉内容 */
+
+    width: 100%;
+    height: 37px;
+    /*position: relative;*/
+    /*display:inline-block;*/
 }
 
-ul {
+.dropdown ul {
     list-style-type: none; /*移除列表前小标志。一个导航栏并不需要列表标记*/
     padding: 0;
     margin: 0;
     width:80%;
     border: 1px solid #e7e7e7;
     background-color: #f1f1f1;
-    top: 0;     /* 置顶 */
-    position: fixed;  /* 固定 */
+    position: absolute;  /* 固定 */
     text-decoration: none;
 }
 
-ul li {
+.dropdown ul li {
     text-align: center; /* a 标签居中 */
     /* border-bottom: 1px solid #555; 设置边框线 实体 颜色 */
     float: left;    /* 浮动 */
     border-right: 1px solid #bbb;
 }
 
-ul li a {
+.dropdown ul li a {
     display: block; 
     width: 60px;
     padding: 8px 16px;
@@ -31,38 +36,30 @@ ul li a {
     text-decoration: none;
 }
 /* 隐藏 li  标签下划线 */
-ul li:last-child {
+.dropdown ul li:last-child {
     border-bottom: none; 
     border-right: none;
     float: right;
     /* padding-right: 200px; */
 }
 
-ul li:first-child {
+.dropdown ul li:first-child {
     /* margin-left: 200px; */
     border-left: 1px solid #bbb;
-}
-
-
-
-/*容器 <div> - 需要定位下拉内容 */
-.dropdown {
-    position: relative;
-    display:inline-block;
 }
 
 /*
  * 鼠标滑到选项改变背景 字体颜色
  */
-ul li a:hover {
+.dropdown ul li a:hover {
     background-color: #555555;
     color: white;
 }
 
 /* 当下拉内容显示后修改下拉按钮的背景颜色 */
-.dropdown:hover .dropbtn:hover {
+/* .dropdown:hover .dropbtn:hover {
     background-color: blue;
- }
+ } */
 
  /*在鼠标移上去后显示下拉菜单 */
 /* .dropdown:hover .dropdown-content {
@@ -71,10 +68,11 @@ ul li a:hover {
 
  /* 下拉内容 (默认隐藏) */
 .dropdown .dropdown-content {
-    display: none;
+    display: block;
     position:absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 400px;
+    top:11px;
     box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -85,3 +83,68 @@ ul li a:hover {
     text-decoration: none;
     display: block;
 }
+
+/* 下拉菜单的链接 */
+.dropdown-content li {
+    list-style-type: none; /*移除列表前小标志。一个导航栏并不需要列表标记*/
+    border-bottom: 1px solid black;
+}
+
+
+.lists_style ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.lists_style ul li {
+    list-style-type: none;
+    padding:8px 25px;
+    text-align: left;
+}
+
+.lists_style ul li a{
+    text-decoration: none;
+}
+
+.first-style {
+    width: 81%;
+    margin-left: 10%;
+    height: 450px;
+}
+
+.first-style .lists_style {
+    width: 20%;
+    height: 100%;
+    margin-top: 0px;
+    float: left;
+}
+
+.first-style .rotation-chart {
+    width: 50%;
+    float: left;
+    margin: 10px;
+    height: 96%;
+}
+
+.first-style .last-chat {
+    margin-top: 10px;
+    width: 28%;
+    height: 97%;
+    float: right;
+}
+
+
+
+/*.tb-ifot {*/
+/*    font-family: iconfont!important;*/
+/*    font-size: 14px;*/
+/*    font-style: normal;*/
+/*    display: inline-block;*/
+/*    text-decoration: none;*/
+/*    -webkit-font-smoothing: antialiased;*/
+/*}*/
+/*.service-bd li .service-arrow {*/
+/*    position: absolute;*/
+/*    right: 10px;*/
+/*    font-size: 12px;*/
+/*}*/
