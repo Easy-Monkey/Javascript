@@ -2,3 +2,16 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-size: cover;
+    /* 背景图不平铺 */
+    background-repeat: no-repeat;
+    /* 背景图垂直、水平均居中 */
+    background-position: center center;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;
+    /* 最大宽度 */
+    max-width: 100%;
+    /* 设置图片不重现实现 */
+    background-image: url('file:///D:/Users/Administrator/Desktop/javascript/images/135613pkm3mx9mjmg6bmhp.jpg');
+}   
