@@ -59,19 +59,21 @@ body {
 */
 
 /*
-    链接样式            链接样式颜色状态
-    a:link {color:#000000;}  未访问链接
-    a:visited {color:#00FF00;}  已访问链接 
-    a:hover {color:#FF00FF;}  鼠标移动到链接上 
-    a:active {color:#0000FF;} 鼠标点击时 
+   链接样式                    链接样式颜色状态
+   a:link {color:#000000;}     未访问链接
+   a:visited {color:#00FF00;}  已访问链接 
+   a:hover {color:#FF00FF;}    鼠标移动到链接上 
+   a:active {color:#0000FF;}   鼠标点击时 
 
-    注意：还可以设置其他操作 例如 背景颜色 || 删除a标签 下划线等等
+   注意：还可以设置其他操作 例如 背景颜色 || 删除a标签 下划线等等
+   注意：在CSS定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
+   注意：在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。
 
 */
 
 /* 
     列表属性             属性描述
-    
+
     list-style	        简写属性。用于把所有用于列表的属性设置于一个声明中
     list-style-image	将图象设置为列表项标志。
     list-style-position	设置列表中列表项标志的位置。
@@ -79,3 +81,93 @@ body {
 
     注意：将列表符号改成图片简写操作 list-style: square url("sqpurple.gif");
 */
+
+/* 学习表格 
+    将表格线(双线改变成单挑线)
+    
+    border-collapse: collapse;
+ */
+ /*
+    边框
+    border-width
+    border-style (required)
+    border-color
+    border
+ */
+ /* 
+    轮廓
+    outline     以下简写: 颜色 样式 宽度
+    outline-color   轮廓颜色
+    outline-style   轮廓样式
+    outline-width   轮廓宽度
+
+ */
+
+ /* 
+    外边距
+    margin  (上 右 下 左 || 上下 左右 || 上 左右 下)
+    margin-right
+    margin-left
+    margin-top
+    margin-bottom
+    margin:auto 标签 内容居中 注意: 使用 margin:auto 无法兼容 IE8,
+    
+    内填充
+
+    padding     (上 右 下 左 || 上下 左右 || 上 左右 下)
+    padding-right
+    padding-left
+    padding-top
+    padding-bottom
+ */
+
+
+ /* 
+    分组选择器 将css 重复的代码 放到一个里面使用 , 分隔
+
+    嵌套选择器 将多个属性分别嵌套匹配 设置不同的样式
+ */
+ 
+ /* 尺寸属性    尺寸描述    
+    height	    设置元素的高度。
+    line-height	设置行高。
+    max-height	设置元素的最大高度。
+    max-width	设置元素的最大宽度。
+    min-height	设置元素的最小高度。
+    min-width	设置元素的最小宽度。
+    width	    设置元素的宽度
+ */
+
+ /* 
+    CSS Display(显示) 与 Visibility（可见性）
+    两者区别:
+        visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局
+        display:none可以隐藏某个元素，且隐藏的元素不会占用任何空间。也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失
+
+ */
+
+ /* 
+   定位        属性值描述
+   position    static      貌似没有效果
+               relative    绝对定位,根据窗口进行 绝对定位 位置在窗口当中一直不变
+               fixed       相对定位,根据原来的 位置进行定位
+               absolute    针对父类 进行定位 ,如果父类没有定位 则针对html
+               sticky      类似导航 向下滑动的时候 贴在窗口最上方 
+              
+ */
+
+ /*   
+   滚动框      属性值描述
+   overflow    visible	默认值。内容不会被修剪，会呈现在元素框之外。
+               hidden	内容会被修剪，并且其余内容是不可见的。
+               scroll	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+               auto	   如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+               inherit	规定应该从父元素继承 overflow 属性的值。
+ */
+ 
+ /* 
+   浮动
+   float left || right
+   clear:both  清除浮动
+ */
+
