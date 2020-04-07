@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./js/app.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+
+    </style>
 </head>
 <body>
-    <div></div>
+    <button onclick="xhttprequests()">普通按钮</button>
 </body>
+<script>
+    function xhttprequests(){
+
+        // 得到航班信息查询结果后的回调函数
+        var handleResponse = function(data){
+            // alert(data.total);
+            console.log(data)
+        };
+
+        // 提供jsonp服务的url地址（不管是什么类型的地址，最终生成的返回值都是一段javascript代码）
+        var url = "http://root.yzzznh.cn/index";
+        // 创建script标签，设置其属性
+        var script = document.createElement('script');
+        script.setAttribute('src', url);
+        // 把script标签加入head，此时调用开始
+        document.getElementsByTagName('head')[0].appendChild(script);
+
+    }
+
+</script>
 </html>

@@ -44,6 +44,7 @@ body {
     background-image	    把图像设置为背景。
     background-position	    设置背景图像的起始位置。
     background-repeat	    设置背景图像是否及如何重复。
+
  */
 
  /*
@@ -171,3 +172,122 @@ body {
    clear:both  清除浮动
  */
 
+
+
+ /*
+    圆角
+    border-radius:50px;
+    盒子阴影 
+    box-shadow: 10px 10px 5px #888888;
+    
+    -webkit-border-image:url()
+    -o-border-image:url()
+    border-image:url()
+ */
+
+
+
+ /*
+    新背景属性
+    background-clip     规定（剪切）背景的绘制区域。
+        border-box      默认值 到方框边框
+        padding-box     剪切成方框内
+        content-box     剪切成内容方框
+
+    background-origin   规定（定位）背景图片的定位区域。
+        border-box      默认值 到方框边框
+        padding-box     边框相对的图片背景
+        content-box     内容相对的图片背景
+
+    background-size     设置图片的大小 宽高
+
+    设置多背景图片:
+    background-image:url()no-repart,url();
+    */
+
+/*
+    渐变： 让多个颜色之前显示平稳的过渡
+
+    线性渐变（Linear Gradients）- 向下/向上/向左/向右/对角方向
+    径向渐变（Radial Gradients）- 由它们的中心定义
+
+    从上到线性渐变
+    background: linear-gradient(red, blue); 标准的语法
+    从左到右线性渐变
+    background: linear-gradient(to right, red , blue);  标准的语法 
+    对角渐变
+    background: linear-gradient(to bottom right, red , blue);  标准的语法
+    不均匀分布
+    background: linear-gradient(red 10%, green 85%, blue 90%);  标准的语法（必须放在最后） 
+    透明度 渐变
+    background: linear-gradient(to right, rgba(225,1,1.1), rgba(225,1,1,0)); rgba 最后一个参数代表透明度 0,1
+    
+    
+    */
+
+
+    /* 
+    阴影制作 卡片效果案例：
+
+    图片版本：
+    div.polaroid {
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        margin:10px;
+            
+        }
+
+        div.container {
+        padding: 10px;
+        }
+
+    文字版本：
+        div.card {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            }
+
+            div.header {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                font-size: 40px;
+            }
+
+            div.container {
+                padding: 10px;
+            }
+    */
+
+
+/* 
+    允许长文本换行：word-wrap:break-word;
+    单词拆分：	word-break:keep-all;
+    
+    */
+
+
+/* 
+    2D转换
+    transform:
+        translate()方法，根据左(X轴)和顶部(Y轴)位置给定的参数，从当前元素位置移动。
+        rotate()方法，在一个给定度数顺时针旋转的元素。负值是允许的，这样是元素逆时针旋转。
+        scale()方法，该元素增加或减少的大小，取决于宽度（X轴）和高度（Y轴）的参数：
+        skew()方法，包含两个参数值，分别表示X轴和Y轴倾斜的角度，如果第二个参数为空，则默认为0，参数为负表示向相反方向倾斜。
+
+*/
+/*
+    过渡
+
+    transition
+
+    transition:width 2s;
+	-webkit-transition:width 2s;  Safari
+*/
+
+
+/*
+ 多列
+ */
